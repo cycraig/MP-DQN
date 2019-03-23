@@ -40,7 +40,7 @@ If something goes wrong, follow the installation instructions given by the repos
 
 ## Example Usage
 
-Each run file has default flags in place, view the run_*domain*_*algorithm*.py files for more information. The click flags are configured to make it easier to run experiments and hyper-parameter searches in batches programmatically, which is . 
+Each run file has default flags in place, view the run_*domain*_*algorithm*.py files for more information. The click flags are configured to make it easier to run experiments and hyper-parameter searches in batches, which is better for scripts but makes it more annoying to type out. 
 
 To run vanilla P-DQN on the Platform domain with default flags:
 ```bash

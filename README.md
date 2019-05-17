@@ -4,13 +4,13 @@ This repository includes several reinforcement learning algorithms for parameter
 
 1. P-DQN [[Xiong et al. 2018]](https://arxiv.org/abs/1810.06394)
 
-    - MP-DQN (under review)
-    - SP-DQN (under review)
+    - MP-DQN [[Bester et al. 2019]](https://arxiv.org/abs/1905.04388)
+    - SP-DQN [[Bester et al. 2019]](https://arxiv.org/abs/1905.04388)
    
 2. PA-DDPG [[Hausknecht & Stone 2016]](https://arxiv.org/abs/1511.04143)
 3. Q-PAMDP [[Masson et al. 2016]](https://arxiv.org/abs/1509.01644)
 
-Multi-Pass Deep Q-Networks (MP-DQN) fixes the over-paramaterisation problem of P-DQN by splitting the action-parameter inputs to the Q-network using several passes (in a parallel batch). Split Deep Q-Networks (SP-DQN) is an alternative (inferior) solution which uses multiple Q-networks with/without shared feature-extraction layers. A weighted-indexed action-parameter loss function is also provided for P-DQN.
+Multi-Pass Deep Q-Networks (MP-DQN) fixes the over-paramaterisation problem of P-DQN by splitting the action-parameter inputs to the Q-network using several passes (in a parallel batch). Split Deep Q-Networks (SP-DQN) is a much slower solution which uses multiple Q-networks with/without shared feature-extraction layers. A weighted-indexed action-parameter loss function is also provided for P-DQN.
 
 ## Dependencies
 
@@ -60,5 +60,15 @@ python run_soccer_pdqn.py --multipass True --layers [1024,512,256,128] --weighte
 ## Citing
 If this repository has helped your research, please cite the following:
 
-
-    Coming soon...
+```bibtex
+@article{bester2019mpdqn,
+	author    = {Bester, Craig J. and James, Steven D. and Konidaris, George D.},
+	title     = {Multi-Pass {Q}-Networks for Deep Reinforcement Learning with Parameterised Action Spaces},
+	journal   = {arXiv preprint arXiv:1905.04388},
+	year      = {2019},
+	archivePrefix = {arXiv},
+	eprinttype    = {arxiv},
+	eprint    = {1905.04388},
+	url       = {http://arxiv.org/abs/1905.04388},
+}
+```
